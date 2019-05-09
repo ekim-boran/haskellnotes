@@ -1,0 +1,13 @@
+Configuring random-shuffle-0.0.4...
+Preprocessing library for random-shuffle-0.0.4..
+Building library for random-shuffle-0.0.4..
+[1 of 1] Compiling System.Random.Shuffle ( src\System\Random\Shuffle.hs, .stack-work\dist\e626a42b\build\System\Random\Shuffle.o )
+
+src\System\Random\Shuffle.hs:59:1: warning: [-Wtabs]
+    Tab character found here, and in 10 further locations.
+    Please use spaces instead.
+   |
+59 |           in b : (shuffleTree rest rs)
+   | ^^^^^^^^
+Installing library in C:\Users\hori\AppData\Roaming\stack\snapshots\92200405\lib\x86_64-windows-ghc-8.6.3\random-shuffle-0.0.4-D8rQyr0EjQQ3NUS8ao8Pzv
+Registering library for random-shuffle-0.0.4..

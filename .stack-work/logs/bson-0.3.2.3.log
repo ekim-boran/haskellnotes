@@ -1,0 +1,7 @@
+Configuring bson-0.3.2.3...
+Preprocessing library for bson-0.3.2.3..
+Building library for bson-0.3.2.3..
+[1 of 2] Compiling Data.Bson        ( Data\Bson.hs, .stack-work\dist\5c8418a7\build\Data\Bson.o )
+[2 of 2] Compiling Data.Bson.Binary ( Data\Bson\Binary.hs, .stack-work\dist\5c8418a7\build\Data\Bson\Binary.o )
+Installing library in C:\sr\snapshots\8a26ed14\lib\x86_64-windows-ghc-8.2.2\bson-0.3.2.3-39KzLgJKOOgIVZGpCMRlGd
+Registering library for bson-0.3.2.3..

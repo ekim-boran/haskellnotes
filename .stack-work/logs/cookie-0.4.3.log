@@ -1,0 +1,21 @@
+Configuring cookie-0.4.3...
+Preprocessing library for cookie-0.4.3..
+Building library for cookie-0.4.3..
+[1 of 1] Compiling Web.Cookie       ( Web\Cookie.hs, .stack-work\dist\5c8418a7\build\Web\Cookie.o )
+
+[;1mWeb\Cookie.hs:93:18: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `breakByte' (imported from Data.ByteString):
+    Deprecated: "It is an internal function and should never have been exported. Use 'break (== x)' instead. (There are rewrite rules that handle this special case of 'break'.)"[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m93 |[0m[0m     let (x, y) = [;1m[35mS.breakByte[0m[0m w s
+[;1m[34m   |[0m[0m[;1m[35m                  ^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mWeb\Cookie.hs:249:21: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `parseTime'
+    (imported from Data.Time, but defined in time-1.8.0.2:Data.Time.Format.Parse):
+    Deprecated: "use "parseTimeM True" instead"[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m249 |[0m[0m     fmap fuzzYear . [;1m[35mparseTime[0m[0m defaultTimeLocale expiresFormat . S8.unpack
+[;1m[34m    |[0m[0m[;1m[35m                     ^^^^^^^^^[0m[0m
+[0m[0m[0mInstalling library in C:\sr\snapshots\8a26ed14\lib\x86_64-windows-ghc-8.2.2\cookie-0.4.3-9kqDbJ83mh7Ds9jlg5TA8A
+Registering library for cookie-0.4.3..

@@ -1,0 +1,19 @@
+Configuring bson-0.3.2.7...
+Preprocessing library for bson-0.3.2.7..
+Building library for bson-0.3.2.7..
+[1 of 2] Compiling Data.Bson        ( Data\Bson.hs, .stack-work\dist\e626a42b\build\Data\Bson.o )
+
+[;1mData\Bson.hs:54:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    Module `Network.BSD' is deprecated:
+      This platform dependent module is no longer supported.[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m54 |[0m[0m [;1m[35mimport Network.BSD (getHostName)[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\Bson.hs:458:90: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `getHostName' (imported from Network.BSD):
+    Deprecated: "This platform dependent module is no longer supported."[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m458 |[0m[0m   machineId = unsafePerformIO (makeWord24 . S.unpack . S.take 3 . MD5.hash . SC.pack <$> [;1m[35mgetHostName[0m[0m)
+[;1m[34m    |[0m[0m[;1m[35m                                                                                          ^^^^^^^^^^^[0m[0m
+[0m[0m[0m[2 of 2] Compiling Data.Bson.Binary ( Data\Bson\Binary.hs, .stack-work\dist\e626a42b\build\Data\Bson\Binary.o )

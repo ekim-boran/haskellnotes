@@ -1,0 +1,63 @@
+Configuring conduit-extra-1.2.3.2...
+Preprocessing library for conduit-extra-1.2.3.2..
+Building library for conduit-extra-1.2.3.2..
+[ 1 of 13] Compiling Data.Conduit.Attoparsec ( Data\Conduit\Attoparsec.hs, .stack-work\dist\5c8418a7\build\Data\Conduit\Attoparsec.o )
+
+[;1mData\Conduit\Attoparsec.hs:79:5: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-top-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: `notEmpty'[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m79 |[0m[0m     [;1m[35mnotEmpty :: [a] -> [a][0m[0m
+[;1m[34m   |[0m[0m[;1m[35m     ^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[ 2 of 13] Compiling Data.Conduit.Binary ( Data\Conduit\Binary.hs, .stack-work\dist\5c8418a7\build\Data\Conduit\Binary.o )
+
+[;1mData\Conduit\Binary.hs:100:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-imports[0m[0m[;1m][0m[0m[;1m
+    The qualified import of `Data.ByteString.Builder' is redundant
+      except perhaps to import instances from `Data.ByteString.Builder'
+    To import instances alone, use: import Data.ByteString.Builder()[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m100 |[0m[0m [;1m[35mimport qualified Data.ByteString.Builder as BB[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\Conduit\Binary.hs:537:28: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `inlinePerformIO'
+    (imported from Data.ByteString.Internal):
+    Deprecated: "If you think you know what you are doing, use 'unsafePerformIO'. If you are sure you know what you are doing, use 'unsafeDupablePerformIO'. If you enjoy sharing an address space with a malevolent agent of chaos, try 'accursedUnutterablePerformIO'."[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m537 |[0m[0m             | ptr >= end = [;1m[35minlinePerformIO[0m[0m (touchForeignPtr fptr) `seq` return ()
+[;1m[34m    |[0m[0m[;1m[35m                            ^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\Conduit\Binary.hs:539:20: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `inlinePerformIO'
+    (imported from Data.ByteString.Internal):
+    Deprecated: "If you think you know what you are doing, use 'unsafePerformIO'. If you are sure you know what you are doing, use 'unsafeDupablePerformIO'. If you enjoy sharing an address space with a malevolent agent of chaos, try 'accursedUnutterablePerformIO'."[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m539 |[0m[0m                 f ([;1m[35minlinePerformIO[0m[0m (peek ptr))
+[;1m[34m    |[0m[0m[;1m[35m                    ^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\Conduit\Binary.hs:590:33: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wname-shadowing[0m[0m[;1m][0m[0m[;1m
+    This binding for `bs' shadows the existing binding
+      bound at Data\Conduit\Binary.hs:582:18[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m590 |[0m[0m                             let [;1m[35mbs[0m[0m = S.concat $ L.toChunks lbs
+[;1m[34m    |[0m[0m[;1m[35m                                 ^^[0m[0m
+[0m[0m[0m
+[;1mData\Conduit\Binary.hs:604:36: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `inlinePerformIO'
+    (imported from Data.ByteString.Internal):
+    Deprecated: "If you think you know what you are doing, use 'unsafePerformIO'. If you are sure you know what you are doing, use 'unsafeDupablePerformIO'. If you enjoy sharing an address space with a malevolent agent of chaos, try 'accursedUnutterablePerformIO'."[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m604 |[0m[0m     process bs = return $! wrap $! [;1m[35minlinePerformIO[0m[0m $!
+[;1m[34m    |[0m[0m[;1m[35m                                    ^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[ 3 of 13] Compiling Data.Conduit.ByteString.Builder ( Data\Conduit\ByteString\Builder.hs, .stack-work\dist\5c8418a7\build\Data\Conduit\ByteString\Builder.o )
+[ 4 of 13] Compiling Data.Conduit.Blaze ( Data\Conduit\Blaze.hs, .stack-work\dist\5c8418a7\build\Data\Conduit\Blaze.o )
+[ 5 of 13] Compiling Data.Conduit.Filesystem ( Data\Conduit\Filesystem.hs, .stack-work\dist\5c8418a7\build\Data\Conduit\Filesystem.o )
+[ 6 of 13] Compiling Data.Conduit.Foldl ( Data\Conduit\Foldl.hs, .stack-work\dist\5c8418a7\build\Data\Conduit\Foldl.o )
+[ 7 of 13] Compiling Data.Conduit.Lazy ( Data\Conduit\Lazy.hs, .stack-work\dist\5c8418a7\build\Data\Conduit\Lazy.o )
+[ 8 of 13] Compiling Data.Conduit.Network ( Data\Conduit\Network.hs, .stack-work\dist\5c8418a7\build\Data\Conduit\Network.o )
+[ 9 of 13] Compiling Data.Conduit.Network.UDP ( Data\Conduit\Network\UDP.hs, .stack-work\dist\5c8418a7\build\Data\Conduit\Network\UDP.o )
+[10 of 13] Compiling Data.Conduit.Process ( Data\Conduit\Process.hs, .stack-work\dist\5c8418a7\build\Data\Conduit\Process.o )
+[11 of 13] Compiling Data.Conduit.Process.Typed ( Data\Conduit\Process\Typed.hs, .stack-work\dist\5c8418a7\build\Data\Conduit\Process\Typed.o )
+[12 of 13] Compiling Data.Conduit.Text ( Data\Conduit\Text.hs, .stack-work\dist\5c8418a7\build\Data\Conduit\Text.o )
+[13 of 13] Compiling Data.Conduit.Zlib ( Data\Conduit\Zlib.hs, .stack-work\dist\5c8418a7\build\Data\Conduit\Zlib.o )
+Installing library in C:\sr\snapshots\8a26ed14\lib\x86_64-windows-ghc-8.2.2\conduit-extra-1.2.3.2-3Zxghlw8eg6FzE5HqrqtFh
+Registering library for conduit-extra-1.2.3.2..

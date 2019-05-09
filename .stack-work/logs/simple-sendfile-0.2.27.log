@@ -1,0 +1,8 @@
+Configuring simple-sendfile-0.2.27...
+Preprocessing library for simple-sendfile-0.2.27..
+Building library for simple-sendfile-0.2.27..
+[1 of 3] Compiling Network.Sendfile.Types ( Network\Sendfile\Types.hs, .stack-work\dist\5c8418a7\build\Network\Sendfile\Types.o )
+[2 of 3] Compiling Network.Sendfile.Fallback ( Network\Sendfile\Fallback.hs, .stack-work\dist\5c8418a7\build\Network\Sendfile\Fallback.o )
+[3 of 3] Compiling Network.Sendfile ( Network\Sendfile.hs, .stack-work\dist\5c8418a7\build\Network\Sendfile.o )
+Installing library in C:\sr\snapshots\8a26ed14\lib\x86_64-windows-ghc-8.2.2\simple-sendfile-0.2.27-2MLEIlzsEXv8CFOl43wcPa
+Registering library for simple-sendfile-0.2.27..

@@ -1,0 +1,593 @@
+
+==================== FINAL INTERFACE ====================
+2018-02-12 13:09:32.8973397 UTC
+
+interface main:MongoUtils 8022
+  interface hash: ac6ef1090a0726ba4fca42cbda3ebba8
+  ABI hash: 0cca4abf738e43ffb3e452c810d79daa
+  export-list hash: fbb039e3f1aec8e2c024bfe6bc7cb629
+  orphan hash: b511275fc86cf1698d8f4d32248dfcc9
+  flag hash: e2fba88eaeb66df7e20bd91f25aef119
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  MongoUtils.getInteger
+  MongoUtils.getObjId
+  MongoUtils.getSecondaryObjId
+  MongoUtils.getString
+  MongoUtils.lookupInteger
+  MongoUtils.lookupSecondaryObjId
+  MongoUtils.lookupString
+  MongoUtils.runMongo
+module dependencies:
+package dependencies: MonadRandom-0.5.1 Win32-2.5.4.1 array-0.5.2.0
+                      base-4.10.1.0 base16-bytestring-0.1.1.6 base64-bytestring-1.0.0.1
+                      basement-0.0.4 binary-0.8.5.1 bson-0.3.2.3 bytestring-0.10.8.2
+                      containers-0.5.10.2 cryptohash-0.11.9 cryptonite-0.24
+                      data-binary-ieee754-0.4.4 deepseq-1.4.3.0 entropy-0.3.8
+                      foundation-0.0.17 ghc-prim-0.5.1.1 hashable-1.2.6.1
+                      hashtables-1.2.2.1 integer-gmp-1.0.1.0 lifted-base-0.2.3.11
+                      memory-0.14.11 monad-control-1.0.2.2 mongoDB-2.3.0.2 mtl-2.2.1
+                      network-2.6.3.3 nonce-1.0.5 parsec-3.1.13.0 primitive-0.6.3.0
+                      random-1.1 random-shuffle-0.0.4 stm-2.4.5.0 text-1.2.2.2
+                      time-1.8.0.2 transformers-0.5.2.0 transformers-base-0.4.4
+                      unliftio-0.2.4.0 unliftio-core-0.1.1.0 vector-0.12.0.1
+orphans: vector-0.12.0.1:Data.Vector.Unboxed
+         hashable-1.2.6.1:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         text-1.2.2.2:Data.Text.Lazy
+         mongoDB-2.3.0.2:Database.MongoDB.Internal.Util
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         network-2.6.3.3:Network.Socket
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         stm-2.4.5.0:Control.Monad.STM basement-0.0.4:Basement.UArray.Base
+         basement-0.0.4:Basement.Block text-1.2.2.2:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.2.2:Data.Text.Show base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: MonadRandom-0.5.1:Control.Monad.Trans.Random.Lazy
+                         base-4.10.1.0:Control.Applicative base-4.10.1.0:Data.Complex
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Compose
+                         base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats basement-0.0.4:Basement.Block.Base
+                         basement-0.0.4:Basement.BoxedArray basement-0.0.4:Basement.Monad
+                         basement-0.0.4:Basement.MutableBuilder basement-0.0.4:Basement.Nat
+                         basement-0.0.4:Basement.NonEmpty
+                         basement-0.0.4:Basement.Numerical.Subtractive
+                         basement-0.0.4:Basement.String
+                         basement-0.0.4:Basement.String.Encoding.ASCII7
+                         basement-0.0.4:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.4:Basement.String.Encoding.UTF16
+                         basement-0.0.4:Basement.String.Encoding.UTF32
+                         basement-0.0.4:Basement.Types.AsciiString
+                         basement-0.0.4:Basement.Types.OffsetSize
+                         basement-0.0.4:Basement.UArray.Base
+                         basement-0.0.4:Basement.UTF8.Base
+                         containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         cryptonite-0.24:Crypto.Hash.Blake2
+                         cryptonite-0.24:Crypto.Hash.Blake2b
+                         cryptonite-0.24:Crypto.Hash.Blake2bp
+                         cryptonite-0.24:Crypto.Hash.Blake2s
+                         cryptonite-0.24:Crypto.Hash.Blake2sp
+                         cryptonite-0.24:Crypto.Hash.Keccak cryptonite-0.24:Crypto.Hash.MD2
+                         cryptonite-0.24:Crypto.Hash.MD4 cryptonite-0.24:Crypto.Hash.MD5
+                         cryptonite-0.24:Crypto.Hash.RIPEMD160
+                         cryptonite-0.24:Crypto.Hash.SHA1 cryptonite-0.24:Crypto.Hash.SHA224
+                         cryptonite-0.24:Crypto.Hash.SHA256 cryptonite-0.24:Crypto.Hash.SHA3
+                         cryptonite-0.24:Crypto.Hash.SHA384
+                         cryptonite-0.24:Crypto.Hash.SHA512
+                         cryptonite-0.24:Crypto.Hash.SHA512t
+                         cryptonite-0.24:Crypto.Hash.SHAKE
+                         cryptonite-0.24:Crypto.Hash.Skein256
+                         cryptonite-0.24:Crypto.Hash.Skein512
+                         cryptonite-0.24:Crypto.Hash.Tiger
+                         cryptonite-0.24:Crypto.Hash.Whirlpool
+                         foundation-0.0.17:Foundation.Array.Bitmap
+                         foundation-0.0.17:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.17:Foundation.Collection.Buildable
+                         foundation-0.0.17:Foundation.Collection.Element
+                         foundation-0.0.17:Foundation.Collection.Keyed
+                         foundation-0.0.17:Foundation.Collection.Mutable
+                         foundation-0.0.17:Foundation.Tuple
+                         monad-control-1.0.2.2:Control.Monad.Trans.Control
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray text-1.2.2.2:Data.Text
+                         text-1.2.2.2:Data.Text.Lazy vector-0.12.0.1:Data.Vector
+                         vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.10.1.0:Data.Function 30594751fd7d03bcf4b6632902b20109
+import  -/  base-4.10.1.0:Data.List e5312e282ad78d8152090e079f862b53
+import  -/  base-4.10.1.0:Data.Ord 38a9281033b0325bcc61a295dc27d0e6
+import  -/  base-4.10.1.0:GHC.Base 8f949d675e49677c272f02ab7a85fe18
+import  -/  base-4.10.1.0:Prelude a93a9400cc0c816c2ee5f39399baa7a0
+import  -/  bson-0.3.2.3:Data.Bson 52582df4dada2bc8156e426732685f0f
+import  -/  integer-gmp-1.0.1.0:GHC.Integer.Type b5281b57ea091e60b176ffa6bef118fd
+import  -/  mongoDB-2.3.0.2:Database.MongoDB afb0ea6c4e0802218fb34aaee3dc9cf7
+import  -/  mongoDB-2.3.0.2:Database.MongoDB.Connection 8f9cdb679b9602409da40e3a7e95f1cf
+import  -/  mongoDB-2.3.0.2:Database.MongoDB.Internal.Protocol d6f361a976e0ef45752c51169d8f5fae
+import  -/  mongoDB-2.3.0.2:Database.MongoDB.Query e30c5ac2207465abd35a9300e61e4c44
+import  -/  text-1.2.2.2:Data.Text 73fb29833b2b8dd6878f639e28457451
+e7a5caa10f6945cbe355dfb947d969a1
+  $s!?_$s$fVal[] :: Data.Bson.Val [GHC.Types.Char]
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Types.Char]
+                  (case GHC.Magic.noinline
+                          @ ([GHC.Fingerprint.Type.Fingerprint]
+                             -> GHC.Fingerprint.Type.Fingerprint)
+                          GHC.Fingerprint.fingerprintFingerprints
+                          (GHC.Types.:
+                             @ GHC.Fingerprint.Type.Fingerprint
+                             Data.Bson.$fVal[]7
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                (Data.Typeable.Internal.typeRepFingerprint
+                                   @ *
+                                   @ GHC.Types.Char
+                                   Data.Bson.$fValChar2)
+                                (GHC.Types.[]
+                                   @ GHC.Fingerprint.Type.Fingerprint))) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                   (Data.Typeable.Internal.TrApp
+                      @ *
+                      @ [GHC.Types.Char]
+                      @ *
+                      @ []
+                      @ GHC.Types.Char
+                      @~ <[GHC.Types.Char]>_N
+                      dt1
+                      dt2
+                      Data.Bson.$fVal[]_a3
+                      Data.Bson.$fValChar2)
+                     `cast`
+                   (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <[GHC.Types.Char]>_N) })
+                  GHC.Show.$fShow[]_$s$fShow[]1
+                  GHC.Classes.$fEq[]_$s$fEq[]1
+                  Data.Bson.$fValChar_$cvalList
+                  (\ (eta :: [[GHC.Types.Char]]) ->
+                   Data.Bson.Array
+                     (GHC.Base.build
+                        @ Data.Bson.Value
+                        (\ @ b1
+                           (c :: Data.Bson.Value -> b1 -> b1)[OneShot]
+                           (n :: b1)[OneShot] ->
+                         GHC.Base.foldr
+                           @ [GHC.Types.Char]
+                           @ b1
+                           (GHC.Base.mapFB
+                              @ Data.Bson.Value
+                              @ b1
+                              @ [GHC.Types.Char]
+                              c
+                              Data.Bson.$fValChar_$cvalList)
+                           n
+                           eta)))
+                  (\ (eta :: GHC.Base.Maybe [GHC.Types.Char]) ->
+                   case eta of wild {
+                     GHC.Base.Nothing -> Data.Bson.Null
+                     GHC.Base.Just x -> Data.Bson.$fValChar_$cvalList x })
+                  Data.Bson.$fValChar_$ccast'List
+                  (Data.Bson.$fVal[]_$ccast'List
+                     @ GHC.Types.Char
+                     Data.Bson.$fValChar)
+                  (\ (ds :: Data.Bson.Value) ->
+                   case ds of wild {
+                     DEFAULT -> GHC.Base.Nothing @ (GHC.Base.Maybe [GHC.Types.Char])
+                     Data.Bson.String x
+                     -> GHC.Base.Just
+                          @ (GHC.Base.Maybe [GHC.Types.Char])
+                          (GHC.Base.Just
+                             @ [GHC.Types.Char]
+                             (case x of wild1 { Data.Text.Internal.Text dt dt1 dt2 ->
+                              let {
+                                end :: GHC.Prim.Int# = GHC.Prim.+# dt1 dt2
+                              } in
+                              letrec {
+                                $wunfold :: GHC.Prim.Int# -> [GHC.Types.Char]
+                                  {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                                = \ (ww :: GHC.Prim.Int#) ->
+                                  case GHC.Prim.tagToEnum#
+                                         @ GHC.Types.Bool
+                                         (GHC.Prim.>=# ww end) of wild2 {
+                                    GHC.Types.False
+                                    -> case GHC.Prim.indexWord16Array# dt ww of r# { DEFAULT ->
+                                       case GHC.Prim.tagToEnum#
+                                              @ GHC.Types.Bool
+                                              (GHC.Prim.geWord# r# 55296##) of wild3 {
+                                         GHC.Types.False
+                                         -> GHC.Types.:
+                                              @ GHC.Types.Char
+                                              (GHC.Types.C# (GHC.Prim.chr# (GHC.Prim.word2Int# r#)))
+                                              ($wunfold (GHC.Prim.+# ww 1#))
+                                         GHC.Types.True
+                                         -> case GHC.Prim.tagToEnum#
+                                                   @ GHC.Types.Bool
+                                                   (GHC.Prim.leWord# r# 56319##) of wild4 {
+                                              GHC.Types.False
+                                              -> GHC.Types.:
+                                                   @ GHC.Types.Char
+                                                   (GHC.Types.C#
+                                                      (GHC.Prim.chr# (GHC.Prim.word2Int# r#)))
+                                                   ($wunfold (GHC.Prim.+# ww 1#))
+                                              GHC.Types.True
+                                              -> GHC.Types.:
+                                                   @ GHC.Types.Char
+                                                   (case GHC.Prim.indexWord16Array#
+                                                           dt
+                                                           (GHC.Prim.+# ww 1#) of r#1 { DEFAULT ->
+                                                    GHC.Types.C#
+                                                      (GHC.Prim.chr#
+                                                         (GHC.Prim.+#
+                                                            (GHC.Prim.+#
+                                                               (GHC.Prim.uncheckedIShiftL#
+                                                                  (GHC.Prim.-#
+                                                                     (GHC.Prim.word2Int# r#)
+                                                                     55296#)
+                                                                  10#)
+                                                               (GHC.Prim.-#
+                                                                  (GHC.Prim.word2Int# r#1)
+                                                                  56320#))
+                                                            65536#)) })
+                                                   ($wunfold (GHC.Prim.+# ww 2#)) } } }
+                                    GHC.Types.True -> GHC.Types.[] @ GHC.Types.Char }
+                              } in
+                              $wunfold dt1 }))
+                     Data.Bson.Null -> Data.Bson.$fVal[]1 @ GHC.Types.Char
+                     Data.Bson.Sym ds1
+                     -> GHC.Base.Just
+                          @ (GHC.Base.Maybe [GHC.Types.Char])
+                          (GHC.Base.Just
+                             @ [GHC.Types.Char]
+                             (case ds1
+                                     `cast`
+                                   (Data.Bson.N:Symbol[0]) of wild1 { Data.Text.Internal.Text dt dt1 dt2 ->
+                              let {
+                                end :: GHC.Prim.Int# = GHC.Prim.+# dt1 dt2
+                              } in
+                              letrec {
+                                $wunfold :: GHC.Prim.Int# -> [GHC.Types.Char]
+                                  {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                                = \ (ww :: GHC.Prim.Int#) ->
+                                  case GHC.Prim.tagToEnum#
+                                         @ GHC.Types.Bool
+                                         (GHC.Prim.>=# ww end) of wild2 {
+                                    GHC.Types.False
+                                    -> case GHC.Prim.indexWord16Array# dt ww of r# { DEFAULT ->
+                                       case GHC.Prim.tagToEnum#
+                                              @ GHC.Types.Bool
+                                              (GHC.Prim.geWord# r# 55296##) of wild3 {
+                                         GHC.Types.False
+                                         -> GHC.Types.:
+                                              @ GHC.Types.Char
+                                              (GHC.Types.C# (GHC.Prim.chr# (GHC.Prim.word2Int# r#)))
+                                              ($wunfold (GHC.Prim.+# ww 1#))
+                                         GHC.Types.True
+                                         -> case GHC.Prim.tagToEnum#
+                                                   @ GHC.Types.Bool
+                                                   (GHC.Prim.leWord# r# 56319##) of wild4 {
+                                              GHC.Types.False
+                                              -> GHC.Types.:
+                                                   @ GHC.Types.Char
+                                                   (GHC.Types.C#
+                                                      (GHC.Prim.chr# (GHC.Prim.word2Int# r#)))
+                                                   ($wunfold (GHC.Prim.+# ww 1#))
+                                              GHC.Types.True
+                                              -> GHC.Types.:
+                                                   @ GHC.Types.Char
+                                                   (case GHC.Prim.indexWord16Array#
+                                                           dt
+                                                           (GHC.Prim.+# ww 1#) of r#1 { DEFAULT ->
+                                                    GHC.Types.C#
+                                                      (GHC.Prim.chr#
+                                                         (GHC.Prim.+#
+                                                            (GHC.Prim.+#
+                                                               (GHC.Prim.uncheckedIShiftL#
+                                                                  (GHC.Prim.-#
+                                                                     (GHC.Prim.word2Int# r#)
+                                                                     55296#)
+                                                                  10#)
+                                                               (GHC.Prim.-#
+                                                                  (GHC.Prim.word2Int# r#1)
+                                                                  56320#))
+                                                            65536#)) })
+                                                   ($wunfold (GHC.Prim.+# ww 2#)) } } }
+                                    GHC.Types.True -> GHC.Types.[] @ GHC.Types.Char }
+                              } in
+                              $wunfold dt1 })) }) -}
+c3d61eb45797c9ec5e11e086170fdce1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   MongoUtils.$trModule3
+                   MongoUtils.$trModule1) -}
+a619683755595bce649050c3ab099cb1
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS MongoUtils.$trModule2) -}
+ade12f7d68623a422a2eb0787a20afc0
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MongoUtils"#) -}
+ee582fdb2101c713c7188b2474a0d133
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS MongoUtils.$trModule4) -}
+bc4e648fa7bf2d8d62eb5e0fff94495f
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+7828ab1906b69088ec68b69eb399e875
+  $wouter ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><S,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+01cdfc55f042ea1c347178ed4d2b9aec
+  getInteger ::
+    Data.Bson.Label -> Data.Bson.Document -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <L,1*U(U,U,U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                MongoUtils.getInteger1
+                  `cast`
+                (<Data.Bson.Label>_R
+                 ->_R <Data.Bson.Document>_R
+                 ->_R Data.Functor.Identity.N:Identity[0]
+                          <GHC.Integer.Type.Integer>_R) -}
+3306368e2937fa44a6ba3cb4e868fb6a
+  getInteger1 ::
+    Data.Bson.Label
+    -> Data.Bson.Document
+    -> Data.Functor.Identity.Identity GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <L,1*U(U,U,U)><L,U>,
+     Unfolding: (\ (label :: Data.Bson.Label)
+                   (eta :: Data.Bson.Document) ->
+                 Data.Bson.cast
+                   @ GHC.Integer.Type.Integer
+                   @ Data.Functor.Identity.Identity
+                   Data.Bson.$fValInteger
+                   Data.Functor.Identity.$fMonadIdentity
+                   (case label of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                    (Data.Bson.$w$slook ww1 ww2 ww3 eta)
+                      `cast`
+                    (Data.Functor.Identity.N:Identity[0] <Data.Bson.Value>_R) })) -}
+ef0ac249155afc9b90988f4504c6d791
+  getObjId :: Data.Bson.Document -> Data.Bson.ObjectId
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                MongoUtils.getObjId1
+                  `cast`
+                (<Data.Bson.Document>_R
+                 ->_R Data.Functor.Identity.N:Identity[0] <Data.Bson.ObjectId>_R) -}
+a76e8b67a3897bfa7d782705e318a727
+  getObjId1 ::
+    Data.Bson.Document
+    -> Data.Functor.Identity.Identity Data.Bson.ObjectId
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (x :: Data.Bson.Document) ->
+                 Data.Bson.cast
+                   @ Data.Bson.ObjectId
+                   @ Data.Functor.Identity.Identity
+                   Data.Bson.$fValObjectId
+                   Data.Functor.Identity.$fMonadIdentity
+                   (case MongoUtils.getObjId2 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                    (Data.Bson.$w$slook ww1 ww2 ww3 x)
+                      `cast`
+                    (Data.Functor.Identity.N:Identity[0] <Data.Bson.Value>_R) })) -}
+b2dc91d0fc91fa5d0b98e132ddae796e
+  getObjId2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   MongoUtils.getObjId3) -}
+0874f69fa16be2f0161258aa7ff2906a
+  getObjId3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("_id"#) -}
+121d157f17c2983997170e35413fa129
+  getSecondaryObjId ::
+    Data.Bson.Label -> Data.Bson.Document -> Data.Bson.ObjectId
+  {- Arity: 2, Strictness: <L,1*U(U,U,U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                MongoUtils.getSecondaryObjId1
+                  `cast`
+                (<Data.Bson.Label>_R
+                 ->_R <Data.Bson.Document>_R
+                 ->_R Data.Functor.Identity.N:Identity[0] <Data.Bson.ObjectId>_R) -}
+b1921150224fcbb452182e1bc430d274
+  getSecondaryObjId1 ::
+    Data.Bson.Label
+    -> Data.Bson.Document
+    -> Data.Functor.Identity.Identity Data.Bson.ObjectId
+  {- Arity: 2, Strictness: <L,1*U(U,U,U)><L,U>,
+     Unfolding: (\ (label :: Data.Bson.Label)
+                   (eta :: Data.Bson.Document) ->
+                 Data.Bson.cast
+                   @ Data.Bson.ObjectId
+                   @ Data.Functor.Identity.Identity
+                   Data.Bson.$fValObjectId
+                   Data.Functor.Identity.$fMonadIdentity
+                   (case label of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                    (Data.Bson.$w$slook ww1 ww2 ww3 eta)
+                      `cast`
+                    (Data.Functor.Identity.N:Identity[0] <Data.Bson.Value>_R) })) -}
+9d17ff7ced71d041899da3bd24c657d0
+  getString ::
+    Data.Bson.Label -> Data.Bson.Document -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U(U,U,U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                MongoUtils.getString1
+                  `cast`
+                (<Data.Bson.Label>_R
+                 ->_R <Data.Bson.Document>_R
+                 ->_R Data.Functor.Identity.N:Identity[0] <GHC.Base.String>_R) -}
+da8b19e513335d0adb43ce33f2446240
+  getString1 ::
+    Data.Bson.Label
+    -> Data.Bson.Document
+    -> Data.Functor.Identity.Identity GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U(U,U,U)><L,U>,
+     Unfolding: (\ (label :: Data.Bson.Label)
+                   (eta :: Data.Bson.Document) ->
+                 Data.Bson.cast
+                   @ GHC.Base.String
+                   @ Data.Functor.Identity.Identity
+                   MongoUtils.$s!?_$s$fVal[]
+                   Data.Functor.Identity.$fMonadIdentity
+                   (case label of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                    (Data.Bson.$w$slook ww1 ww2 ww3 eta)
+                      `cast`
+                    (Data.Functor.Identity.N:Identity[0] <Data.Bson.Value>_R) })) -}
+d5fa7831f82962f5ad0877bace887b20
+  lookupInteger ::
+    Data.Bson.Label
+    -> Data.Bson.Document -> GHC.Base.Maybe GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S(SSS),1*U(U,U,1*U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (label :: Data.Bson.Label) (document :: Data.Bson.Document) ->
+                 case label of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Data.Bson.$w!?
+                   @ GHC.Integer.Type.Integer
+                   Data.Bson.$fValInteger
+                   document
+                   ww1
+                   ww2
+                   ww3 }) -}
+2d516f05dac63499f357ca2f8a0c3495
+  lookupSecondaryObjId ::
+    Data.Bson.Label
+    -> Data.Bson.Document -> GHC.Base.Maybe Data.Bson.ObjectId
+  {- Arity: 2, Strictness: <S(SSS),1*U(U,U,1*U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (label :: Data.Bson.Label) (document :: Data.Bson.Document) ->
+                 case label of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Data.Bson.$w!?
+                   @ Data.Bson.ObjectId
+                   Data.Bson.$fValObjectId
+                   document
+                   ww1
+                   ww2
+                   ww3 }) -}
+aba2720710485e7e92e64aa426640e23
+  lookupString ::
+    Data.Bson.Label
+    -> Data.Bson.Document -> GHC.Base.Maybe GHC.Base.String
+  {- Arity: 2, Strictness: <S(SSS),1*U(U,U,1*U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (label :: Data.Bson.Label) (document :: Data.Bson.Document) ->
+                 case label of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Data.Bson.$w!?
+                   @ GHC.Base.String
+                   MongoUtils.$s!?_$s$fVal[]
+                   document
+                   ww1
+                   ww2
+                   ww3 }) -}
+f8bed8d566174f2869199d65027fac9c
+  runMongo ::
+    GHC.Base.String
+    -> Database.MongoDB.Query.Action GHC.Types.IO a -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <L,1*U><L,1*C1(C1(U(U,A)))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MongoUtils.runMongo1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Base.String>_R
+                 ->_R <Database.MongoDB.Query.Action GHC.Types.IO a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+65fdc502324994471aebef645fcaa2c8
+  runMongo1 ::
+    GHC.Base.String
+    -> Database.MongoDB.Query.Action GHC.Types.IO a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,1*U><L,1*C1(C1(U(U,A)))><S,U>,
+     Unfolding: (\ @ a
+                   (dbName :: GHC.Base.String)
+                   (functionToRun :: Database.MongoDB.Query.Action GHC.Types.IO a)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Database.MongoDB.Connection.globalConnectTimeout
+                        `cast`
+                      (Nth:2
+                           (Trans
+                                (<GHC.IORef.IORef Database.MongoDB.Connection.Secs>_R
+                                 ->_R GHC.Types.N:IO[0] <Database.MongoDB.Connection.Secs>_R)
+                                (GHC.IORef.N:IORef[0] <Database.MongoDB.Connection.Secs>_N
+                                 ->_R <GHC.Prim.State# GHC.Prim.RealWorld
+                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                             Database.MongoDB.Connection.Secs #)>_R))) of wild { GHC.STRef.STRef var# ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ Database.MongoDB.Connection.Secs
+                        var#
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of ww { GHC.Types.D# ww1 ->
+                 case Database.MongoDB.Connection.$wconnect'
+                        ww1
+                        MongoUtils.runMongo2
+                        Database.MongoDB.Connection.defaultPort
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case (functionToRun
+                         `cast`
+                       (Control.Monad.Trans.Reader.N:ReaderT[0]
+                            <*>_N
+                            <Database.MongoDB.Query.MongoContext>_R
+                            <GHC.Types.IO>_R
+                            <a>_N)
+                         (Database.MongoDB.Query.MongoContext
+                            ipv3
+                            Database.MongoDB.Query.master
+                            (case GHC.Magic.runRW#
+                                    @ ('GHC.Types.TupleRep
+                                         '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                                    @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                         Data.Text.Internal.Text #)
+                                    (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                     case GHC.Prim.newByteArray#
+                                            @ GHC.Prim.RealWorld
+                                            10#
+                                            s1 of ds3 { (#,#) ipv4 ipv5 ->
+                                     MongoUtils.$wouter
+                                       ipv5
+                                       4#
+                                       dbName
+                                       0#
+                                       ipv4 }) of ds3 { (#,#) ipv4 ipv5 ->
+                             ipv5 })))
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 Database.MongoDB.Internal.Protocol.close1 ipv3 ipv4 } } } } }) -}
+cedfa08cafcc8a95a88d5c86963dff70
+  runMongo2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# MongoUtils.runMongo3) -}
+364e5e9229f5dba3d57b27e7a8a28c1f
+  runMongo3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("127.0.0.1"#) -}
+"SPEC/MongoUtils $fVal[] @ Char" [orphan] forall (v :: Data.Bson.Val
+                                                         GHC.Types.Char)
+  Data.Bson.$fVal[] @ GHC.Types.Char v = MongoUtils.$s!?_$s$fVal[]
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

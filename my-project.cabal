@@ -1,0 +1,97 @@
+name:                my-project
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/my-project#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2018 Author name here
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+library
+  exposed-modules:
+      Concepts.Concurrency
+      Concepts.Exceptions.Basic
+      Concepts.Exceptions.Catch
+      Concepts.Exceptions.Control
+      Concepts.Exceptions.Except
+      Concepts.Files
+      Concepts.Lenses.Basic
+      Concepts.Lenses.JohnWiegles
+      Concepts.Monads.Basic
+      Concepts.Strings.Strict
+      Concepts.Types.GADTs
+     
+      Concepts.Tagless.App
+      Concepts.Tagless.Domain
+      Concepts.Tagless.IO
+      Concepts.Tagless.Test
+
+      Libraries.Queues.Rabbit
+      Libraries.Database.Postgresimple
+      Libraries.Database.Postgresimple2
+      Libraries.Json.Basic
+      Libraries.Logging.Katip
+      Libraries.Web.Scotty
+      Libraries.Web.Servant
+ 
+  hs-source-dirs:
+      lib
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , exceptions
+    , hspec
+    , http-types
+ 
+    , lens
+    , monad-control
+    , monad-loops
+    , mtl
+    , postgresql-simple
+    , random
+    , resource-pool
+    , safe-exceptions
+    , scotty
+    , template-haskell
+    , text
+    , transformers
+    , unordered-containers
+    , monad-logger
+    , amqp
+    , servant
+  default-language: Haskell2010
+executable my-project
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:
+       
+     aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , exceptions
+    , hspec
+    , http-types
+    , lens
+    , monad-control
+    , monad-loops
+    , mtl
+    , postgresql-simple
+    , random
+    , resource-pool
+    , safe-exceptions
+    , scotty
+    , template-haskell
+    , text
+    , transformers
+    , unordered-containers
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+ 

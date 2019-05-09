@@ -1,0 +1,6 @@
+Configuring data-default-instances-containers-0.0.1...
+Preprocessing library for data-default-instances-containers-0.0.1..
+Building library for data-default-instances-containers-0.0.1..
+[1 of 1] Compiling Data.Default.Instances.Containers ( Data\Default\Instances\Containers.hs, .stack-work\dist\5c8418a7\build\Data\Default\Instances\Containers.o )
+Installing library in C:\sr\snapshots\8a26ed14\lib\x86_64-windows-ghc-8.2.2\data-default-instances-containers-0.0.1-A7WE5ZxkyD2DXghs3tnK2n
+Registering library for data-default-instances-containers-0.0.1..

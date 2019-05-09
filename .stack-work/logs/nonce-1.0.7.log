@@ -1,0 +1,6 @@
+Configuring nonce-1.0.7...
+Preprocessing library for nonce-1.0.7..
+Building library for nonce-1.0.7..
+[1 of 1] Compiling Crypto.Nonce     ( src\Crypto\Nonce.hs, .stack-work\dist\e626a42b\build\Crypto\Nonce.o )
+Installing library in C:\Users\hori\AppData\Roaming\stack\snapshots\92200405\lib\x86_64-windows-ghc-8.6.3\nonce-1.0.7-I9mT0EmFOGk5Q4qtoeyaZw
+Registering library for nonce-1.0.7..

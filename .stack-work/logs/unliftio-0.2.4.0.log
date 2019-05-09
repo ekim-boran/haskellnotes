@@ -1,0 +1,17 @@
+Configuring unliftio-0.2.4.0...
+Preprocessing library for unliftio-0.2.4.0..
+Building library for unliftio-0.2.4.0..
+[ 1 of 12] Compiling Paths_unliftio   ( .stack-work\dist\5c8418a7\build\autogen\Paths_unliftio.hs, .stack-work\dist\5c8418a7\build\Paths_unliftio.o )
+[ 2 of 12] Compiling UnliftIO.Chan    ( src\UnliftIO\Chan.hs, .stack-work\dist\5c8418a7\build\UnliftIO\Chan.o )
+[ 3 of 12] Compiling UnliftIO.Exception ( src\UnliftIO\Exception.hs, .stack-work\dist\5c8418a7\build\UnliftIO\Exception.o )
+[ 4 of 12] Compiling UnliftIO.Async   ( src\UnliftIO\Async.hs, .stack-work\dist\5c8418a7\build\UnliftIO\Async.o )
+[ 5 of 12] Compiling UnliftIO.IO      ( src\UnliftIO\IO.hs, .stack-work\dist\5c8418a7\build\UnliftIO\IO.o )
+[ 6 of 12] Compiling UnliftIO.IORef   ( src\UnliftIO\IORef.hs, .stack-work\dist\5c8418a7\build\UnliftIO\IORef.o )
+[ 7 of 12] Compiling UnliftIO.MVar    ( src\UnliftIO\MVar.hs, .stack-work\dist\5c8418a7\build\UnliftIO\MVar.o )
+[ 8 of 12] Compiling UnliftIO.Concurrent ( src\UnliftIO\Concurrent.hs, .stack-work\dist\5c8418a7\build\UnliftIO\Concurrent.o )
+[ 9 of 12] Compiling UnliftIO.STM     ( src\UnliftIO\STM.hs, .stack-work\dist\5c8418a7\build\UnliftIO\STM.o )
+[10 of 12] Compiling UnliftIO.Temporary ( src\UnliftIO\Temporary.hs, .stack-work\dist\5c8418a7\build\UnliftIO\Temporary.o )
+[11 of 12] Compiling UnliftIO.Timeout ( src\UnliftIO\Timeout.hs, .stack-work\dist\5c8418a7\build\UnliftIO\Timeout.o )
+[12 of 12] Compiling UnliftIO         ( src\UnliftIO.hs, .stack-work\dist\5c8418a7\build\UnliftIO.o )
+Installing library in C:\sr\snapshots\8a26ed14\lib\x86_64-windows-ghc-8.2.2\unliftio-0.2.4.0-IVTGK3mHtkhHiDy8XbDoWC
+Registering library for unliftio-0.2.4.0..

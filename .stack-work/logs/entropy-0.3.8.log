@@ -1,0 +1,41 @@
+[1 of 2] Compiling Main             ( C:\Users\hori\AppData\Local\Temp\stack15920\entropy-0.3.8\Setup.hs, C:\Users\hori\AppData\Local\Temp\stack15920\entropy-0.3.8\.stack-work\dist\5c8418a7\setup\Main.o )
+[2 of 2] Compiling StackSetupShim   ( C:\sr\setup-exe-src\setup-shim-Z6RU0evB.hs, C:\Users\hori\AppData\Local\Temp\stack15920\entropy-0.3.8\.stack-work\dist\5c8418a7\setup\StackSetupShim.o )
+Linking C:\Users\hori\AppData\Local\Temp\stack15920\entropy-0.3.8\.stack-work\dist\5c8418a7\setup\setup.exe ...
+Configuring entropy-0.3.8...
+Result of RDRAND Test: True
+Preprocessing library for entropy-0.3.8..
+Building library for entropy-0.3.8..
+[1 of 2] Compiling System.EntropyWindows ( System\EntropyWindows.hs, .stack-work\dist\5c8418a7\build\System\EntropyWindows.o )
+
+[;1mSystem\EntropyWindows.hs:80:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunsupported-calling-conventions[0m[0m[;1m][0m[0m[;1m
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "CryptAcquireContextA" c_cryptAcquireCtx
+          :: Ptr Word32 -> CString -> CString -> Word32 -> Word32 -> IO Int32[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m80 |[0m[0m [;1m[35mforeign import stdcall unsafe "CryptAcquireContextA"[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m
+[;1mSystem\EntropyWindows.hs:82:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunsupported-calling-conventions[0m[0m[;1m][0m[0m[;1m
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "CryptGenRandom" c_cryptGenRandom
+          :: Word32 -> Word32 -> Ptr Word8 -> IO Int32[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m82 |[0m[0m [;1m[35mforeign import stdcall unsafe "CryptGenRandom"[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m
+[;1mSystem\EntropyWindows.hs:84:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunsupported-calling-conventions[0m[0m[;1m][0m[0m[;1m
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "CryptReleaseContext" c_cryptReleaseCtx
+          :: Word32 -> Word32 -> IO Int32[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m84 |[0m[0m [;1m[35mforeign import stdcall unsafe "CryptReleaseContext"[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m[2 of 2] Compiling System.Entropy   ( System\Entropy.hs, .stack-work\dist\5c8418a7\build\System\Entropy.o )
+Installing library in C:\sr\snapshots\8a26ed14\lib\x86_64-windows-ghc-8.2.2\entropy-0.3.8-5QiMzNT1cZR8rvzBKl4ZZ8
+Registering library for entropy-0.3.8..

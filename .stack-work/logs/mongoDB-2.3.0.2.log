@@ -1,0 +1,171 @@
+Configuring mongoDB-2.3.0.2...
+Preprocessing library for mongoDB-2.3.0.2..
+Building library for mongoDB-2.3.0.2..
+[1 of 9] Compiling Database.MongoDB.Internal.Util ( Database\MongoDB\Internal\Util.hs, .stack-work\dist\5c8418a7\build\Database\MongoDB\Internal\Util.o )
+
+[;1mDatabase\MongoDB\Internal\Util.hs:24:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    Module `Control.Monad.Error' is deprecated:
+      Use Control.Monad.Except instead[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m24 |[0m[0m [;1m[35mimport Control.Monad.Error (MonadError(..), Error(..))[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\Internal\Util.hs:72:34: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of type constructor or class `Error'
+    (imported from Control.Monad.Error, but defined in Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m72 |[0m[0m untilSuccess :: (MonadError e m, [;1m[35mError[0m[0m e) => (a -> m b) -> [a] -> m b
+[;1m[34m   |[0m[0m[;1m[35m                                  ^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\Internal\Util.hs:74:31: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `strMsg'
+    (imported from Control.Monad.Error, but defined in Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m74 |[0m[0m untilSuccess = untilSuccess' ([;1m[35mstrMsg[0m[0m "empty untilSuccess")
+[;1m[34m   |[0m[0m[;1m[35m                               ^^^^^^[0m[0m
+[0m[0m[0m[2 of 9] Compiling Database.MongoDB.Transport ( Database\MongoDB\Transport.hs, .stack-work\dist\5c8418a7\build\Database\MongoDB\Transport.o )
+[3 of 9] Compiling Database.MongoDB.Internal.Protocol ( Database\MongoDB\Internal\Protocol.hs, .stack-work\dist\5c8418a7\build\Database\MongoDB\Internal\Protocol.o )
+
+[;1mDatabase\MongoDB\Internal\Protocol.hs:112:24: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `isEmptyChan'
+    (imported from Control.Concurrent.Chan):
+    Deprecated: "if you need this operation, use Control.Concurrent.STM.TChan instead.  See <http://ghc.haskell.org/trac/ghc/ticket/4154> for details"[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m112 |[0m[0m           chanEmpty <- [;1m[35misEmptyChan[0m[0m responseQueue
+[;1m[34m    |[0m[0m[;1m[35m                        ^^^^^^^^^^^[0m[0m
+[0m[0m[0m[4 of 9] Compiling Database.MongoDB.Query ( Database\MongoDB\Query.hs, .stack-work\dist\5c8418a7\build\Database\MongoDB\Query.o )
+
+[;1mDatabase\MongoDB\Query.hs:74:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    Module `Control.Monad.Error' is deprecated:
+      Use Control.Monad.Except instead[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m74 |[0m[0m [;1m[35mimport Control.Monad.Error (Error(..))[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\Query.hs:140:10: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of type constructor or class `Error'
+    (imported from Control.Monad.Error, but defined in Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m140 |[0m[0m instance [;1m[35mError[0m[0m Failure where strMsg = error
+[;1m[34m    |[0m[0m[;1m[35m          ^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\Query.hs:140:10: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of type constructor or class `Error'
+    (imported from Control.Monad.Error, but defined in Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m140 |[0m[0m instance [;1m[35mError[0m[0m Failure where strMsg = error
+[;1m[34m    |[0m[0m[;1m[35m          ^^^^^[0m[0m
+[0m[0m[0m[5 of 9] Compiling Database.MongoDB.Connection ( Database\MongoDB\Connection.hs, .stack-work\dist\5c8418a7\build\Database\MongoDB\Connection.o )
+
+[;1mDatabase\MongoDB\Connection.hs:42:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    Module `Control.Monad.Error' is deprecated:
+      Use Control.Monad.Except instead[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m42 |[0m[0m [;1m[35mimport Control.Monad.Error (throwError)[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[6 of 9] Compiling Database.MongoDB.Admin ( Database\MongoDB\Admin.hs, .stack-work\dist\5c8418a7\build\Database\MongoDB\Admin.o )
+[7 of 9] Compiling Database.MongoDB ( Database\MongoDB.hs, .stack-work\dist\5c8418a7\build\Database\MongoDB.o )
+[8 of 9] Compiling Database.MongoDB.GridFS ( Database\MongoDB\GridFS.hs, .stack-work\dist\5c8418a7\build\Database\MongoDB\GridFS.o )
+
+[;1mDatabase\MongoDB\GridFS.hs:30:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-imports[0m[0m[;1m][0m[0m[;1m
+    The import of `MonadTrans'
+    from module `Control.Monad.Trans' is redundant[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m30 |[0m[0m [;1m[35mimport Control.Monad.Trans(MonadTrans, lift)[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\GridFS.hs:124:5: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-top-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: `fwChunkSize'[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m124 |[0m[0m   { [;1m[35mfwChunkSize[0m[0m :: Int64
+[;1m[34m    |[0m[0m[;1m[35m     ^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\GridFS.hs:125:5: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-top-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: `fwBucket'[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m125 |[0m[0m   , [;1m[35mfwBucket[0m[0m :: Bucket
+[;1m[34m    |[0m[0m[;1m[35m     ^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\GridFS.hs:126:5: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-top-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: `fwFilesId'[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m126 |[0m[0m   , [;1m[35mfwFilesId[0m[0m :: ObjectId
+[;1m[34m    |[0m[0m[;1m[35m     ^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\GridFS.hs:127:5: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-top-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: `fwChunkIndex'[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m127 |[0m[0m   , [;1m[35mfwChunkIndex[0m[0m :: Int
+[;1m[34m    |[0m[0m[;1m[35m     ^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\GridFS.hs:128:5: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-top-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: `fwSize'[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m128 |[0m[0m   , [;1m[35mfwSize[0m[0m :: Int64
+[;1m[34m    |[0m[0m[;1m[35m     ^^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\GridFS.hs:129:5: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-top-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: `fwAcc'[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m129 |[0m[0m   , [;1m[35mfwAcc[0m[0m :: L.ByteString
+[;1m[34m    |[0m[0m[;1m[35m     ^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\GridFS.hs:130:5: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-top-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: `fwMd5Context'[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m130 |[0m[0m   , [;1m[35mfwMd5Context[0m[0m :: MD5Context
+[;1m[34m    |[0m[0m[;1m[35m     ^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\GridFS.hs:131:5: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-top-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: `fwMd5acc'[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m131 |[0m[0m   , [;1m[35mfwMd5acc[0m[0m :: L.ByteString
+[;1m[34m    |[0m[0m[;1m[35m     ^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\GridFS.hs:139:3: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wname-shadowing[0m[0m[;1m][0m[0m[;1m
+    This binding for `timestamp' shadows the existing binding
+      imported from `Database.MongoDB' at Database\MongoDB\GridFS.hs:38:1-23
+      (and originally defined in `Data.Bson')[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m139 |[0m[0m   [;1m[35mtimestamp[0m[0m <- liftIO $ getCurrentTime
+[;1m[34m    |[0m[0m[;1m[35m   ^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\GridFS.hs:152:17: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wname-shadowing[0m[0m[;1m][0m[0m[;1m
+    This binding for `rest' shadows the existing binding
+      imported from `Database.MongoDB' at Database\MongoDB\GridFS.hs:38:1-23
+      (and originally defined in `Database.MongoDB.Query'
+         at Database\MongoDB\Query.hs:1287:1-4)[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m152 |[0m[0m finalizeMD5 ctx [;1m[35mrest[0m[0m =
+[;1m[34m    |[0m[0m[;1m[35m                 ^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\GridFS.hs:170:28: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wname-shadowing[0m[0m[;1m][0m[0m[;1m
+    This binding for `rest' shadows the existing binding
+      imported from `Database.MongoDB' at Database\MongoDB\GridFS.hs:38:1-23
+      (and originally defined in `Database.MongoDB.Query'
+         at Database\MongoDB\Query.hs:1287:1-4)[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m170 |[0m[0m                  (current, [;1m[35mrest[0m[0m) = L.splitAt (md5BlockLength * numBlocks) md5acc_temp
+[;1m[34m    |[0m[0m[;1m[35m                            ^^^^[0m[0m
+[0m[0m[0m
+[;1mDatabase\MongoDB\GridFS.hs:178:12: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wname-shadowing[0m[0m[;1m][0m[0m[;1m
+    This binding for `chunk' shadows the existing binding
+      bound at Database\MongoDB\GridFS.hs:162:81[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m178 |[0m[0m       let ([;1m[35mchunk[0m[0m, acc') = L.splitAt chunkSize acc_temp
+[;1m[34m    |[0m[0m[;1m[35m            ^^^^^[0m[0m
+[0m[0m[0m[9 of 9] Compiling Database.MongoDB.Transport.Tls ( Database\MongoDB\Transport\Tls.hs, .stack-work\dist\5c8418a7\build\Database\MongoDB\Transport\Tls.o )
+
+[;1mDatabase\MongoDB\Transport\Tls.hs:53:38: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `ciphersuite_all'
+    (imported from Network.TLS.Extra.Cipher):
+    "This ciphersuite list contains RC4. Use ciphersuite_strong or ciphersuite_default instead."[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m53 |[0m[0m             { TLS.supportedCiphers = [;1m[35mTLS.ciphersuite_all[0m[0m}
+[;1m[34m   |[0m[0m[;1m[35m                                      ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0mInstalling library in C:\sr\snapshots\8a26ed14\lib\x86_64-windows-ghc-8.2.2\mongoDB-2.3.0.2-K4i56oIvzihCorKlk5tFSf
+Registering library for mongoDB-2.3.0.2..
